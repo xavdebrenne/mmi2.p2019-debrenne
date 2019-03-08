@@ -1,0 +1,93 @@
+@mixin pos($top: 0, $left: 0){
+  top: $top;
+  left: $left;
+}
+
+*{
+  transition: all 500ms ease-out;
+  font-family: Mermaid;
+}
+
+.header {
+  background: gold;
+  display:flex;
+  flex-direction: column;
+  padding: 85px 0 25px 0px;
+  
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    
+  }
+}
+
+.nav{
+    position: fixed;
+    @include pos(-132px, 0);
+    
+    width: 100%;
+  }
+
+.nav__button{
+  height: 25px;
+  width: 25px;
+  padding:20px 100% 20px 20px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  background-color:black;
+
+  
+  div{
+    height:20%;
+    background-color:grey;
+  }
+  
+}
+
+.button__toggle{
+
+  div{
+
+    &:first-child{
+      transform: rotate(47.5deg);
+      transform-origin:bottom left;
+    }
+
+    &:nth-child(2){
+      opacity: 0;
+      transform : rotate(360deg);
+    }
+
+    &:last-child{
+      transform: rotate(-47.5deg);
+      transform-origin:top left;
+    }
+
+  }
+
+}
+
+.nav__toggle{
+  @include pos(0px, 0);
+}
+
+
+.menu{
+  height:50px;
+  display: inline;
+  li{
+
+    &:nth-child(even){
+      background-color:gray;
+    }
+    &:nth-child(odd){
+      background-color:dimgray;
+    }
+    list-style-type: none;
+    font-size:1.5rem;
+    color: white;
+    padding:10px 20px;
+  }
+}
