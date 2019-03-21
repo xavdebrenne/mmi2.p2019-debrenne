@@ -1,15 +1,17 @@
 .news{
   position:relative;
+  text-align:center;
   
   img{
     width: 100%;
 
   }
 
+
+
 }
 
 .dot {
-  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -21,4 +23,28 @@
 
 .news__slide{
   display: none;
+  text-align:center;
 }
+
+
+.active{
+  background-color: #717171;
+}
+
+.text{
+  margin: -30px 0 25px 0;
+  font-size: 4.5vh;
+}
+.search {
+  width: 75%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  background:no-repeat left/8% url('../../img/search-solid.svg');
+  background-position: 10px 10px;
+  padding: 12px 20px 12px 50px;
+  font-size:3vh;
+  border-radius:25px;
+  margin:5px 0;
+}
+
+/* When the input field gets focus, change its width to 100% */
