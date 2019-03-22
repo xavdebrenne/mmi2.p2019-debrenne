@@ -1,3 +1,5 @@
+import 'waypoints/lib/noframework.waypoints.min.js'
+
 document.getElementById("nav__button").addEventListener('click', function(){
   this.classList.toggle( 'button__toggle' );
 
@@ -32,3 +34,29 @@ function showSlides() {
 
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 } 
+
+
+var fabric = new Waypoint({
+  element: document.getElementById('fabric'),
+  handler: function(direction) {
+    document.getElementById('fabric').classList.add('is-reached');
+  },
+  offset:'75%'
+});
+var quality = new Waypoint({
+  element: document.getElementById('quality'),
+  handler: function(direction) {
+    document.getElementById('quality').classList.add('is-reached');
+    document.getElementById('arrow1').classList.add('is-reached');
+
+  },
+  offset:'75%'
+});
+var delivery = new Waypoint({
+  element: document.getElementById('delivery'),
+  handler: function(direction) {
+    document.getElementById('delivery').classList.add('is-reached');
+    document.getElementById('arrow2').classList.add('is-reached');  
+  },
+  offset:'75%'
+});

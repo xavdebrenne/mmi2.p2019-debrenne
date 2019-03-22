@@ -1,0 +1,61 @@
+.conception{
+  text-align:center;
+
+
+  p{
+    font-size:6vh;
+  }
+  
+  figure{
+    margin: 30px 0;
+    opacity:0;
+    transition:opacity 1s;
+    img{
+      height:auto;
+      width:25%;
+    }
+
+  }
+
+  figcaption{
+    margin:10px 0;
+  }
+
+  img{
+    height:auto;
+    width:50%;
+  }
+
+
+
+
+}
+.conception .is-reached{
+  opacity: 1;
+
+}
+.is-reached p{
+  opacity: 1!important;
+  transform:none!important;
+}
+
+#arrow1, #arrow2{
+  p{
+    display:inline-block;
+    opacity:0;
+    transition: transform 1.25s;
+    &:first-child{
+      transform: translateX(-200px);
+    }
+
+    &:nth-child(2){
+      transform:rotateZ(360deg);
+    }
+
+    &:last-child{
+      transform:translateX(200px);
+    }
+
+  }
+
+}
