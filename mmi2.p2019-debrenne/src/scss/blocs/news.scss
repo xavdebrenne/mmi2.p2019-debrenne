@@ -3,7 +3,7 @@
   text-align:center;
   
   img{
-    width: 100%;
+    width: 50vh;
 
   }
 
@@ -41,10 +41,31 @@
   transition: width 0.4s ease-in-out;
   background:no-repeat left/8% url('../../img/search-solid.svg');
   background-position: 10px 10px;
+  background-size: 30px;
   padding: 12px 20px 12px 50px;
   font-size:3vh;
   border-radius:25px;
   margin:5px 0;
 }
 
-/* When the input field gets focus, change its width to 100% */
+
+.news__market{
+  color: #fff;
+  text-transform: uppercase;
+  background: #60a3bc;
+  padding:10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  border: none;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.news__market:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(255, 130, 0, 0.5);
+-moz-box-shadow: 0px 5px 40px -10px rgba(255, 130, 0, 0.5);
+transition: all 0.4s ease 0s;
+border-radius: 50px;
+}
+

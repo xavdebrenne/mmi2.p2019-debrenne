@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic site with parcel</title>
+  <link rel="stylesheet" href="scss/styles.scss">
+</head>
+<body>
+  <main>
+    <header class="header">
+      <nav id="nav" class="nav">
+        <div class="menu">
+          <li><a href="#news">Les nouveautés</a></li>
+          <li><a href="#conception">informations produits</a></li>
+          <li><a href="#contact">Nous contacter</a></li>
+        </div>
+        <div id="nav__button" class="nav__button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+      <img src="img/logo.svg" alt="">
+      <h1>Au Chap-plat</h1>
+    </header>
+    
+    <section id="news" class="news">
+      <input class="news__search" type="text" name="search" placeholder="Vous recherchez un produit ?"> 
+      <div class="news__slide">
+        <img src="./img/casquette1.jpg">
+        <div class="text">Batata poulet</div>
+      </div>
+      <div class="news__slide">
+        <img src="./img/casquette2.jpg">
+        <div class="text">OuiOui</div>
+      </div>
+      <div class="news__slide">
+        <img src="./img/casquette3.jpg">
+        <div class="text">Non.</div>
+      </div>
+      
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <a href="#" class="news__market">Voir la boutique</a>
+    </section>
+    <section id="conception" class="conception">
+      
+      <figure id="fabric">
+        <img src="./img/industry-solid.svg">
+    
+        <figcaption>Tous nos bérets sont fabriqués avec le savoir Italien afin de vous proposer la meilleure qualité possible.</figcaption>
+      </figure>
+      <div id="arrow1"><p>◄─</p><p>─</p><p>─►</p></div>
+      <figure id="quality">
+        <img src="./img/tools-solid.svg">
+    
+        <figcaption>Nous fortement prêtons attentions au moindre de détail afin de vous proposer des produits de qualité. Avec l'utilisation de cachemire, nous vous garantissons aussi bien un style sans précédent qu'un confort à toute épreuve.</figcaption>
+      </figure>
+      <div id="arrow2"><p>◄─</p><p>─</p><p>─►</p></div>
+      <figure id="delivery">
+        <img src="./img/truck-solid.svg">
+    
+        <figcaption>Tout nos produits sont livrés gratuitement. Vous vous êtes trompés dans la taille ? Nous vous proposons de l'échanger sans frais suplémentaire.</figcaption>
+      </figure>
+
+    </section>   
+
+
+
+  </main>
+  <footer>
+    <section id="contact">
+      <h2>Retrouvez nous aussi sur :</h2>
+      <div class="rsn">
+        <a href="#">
+          <figure class="rsn__facebook">
+            <img src="./img/facebook.png">
+            <figcaption>Facebook</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="rsn__twitter">
+            <img src="./img/twitter.png">
+            <figcaption>Twitter</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="rsn__instagram">
+            <img src="./img/instagram.png">
+            <figcaption>Livraison</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="rsn__yt">
+            <img src="./img/youtube.png">
+            <figcaption>Livraison</figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>Nous contacter :</h2>
+      <figure class="contact__maps">
+        <img src="./img/map.svg">
+        <figcaption>90 rue de Basseau - Angoulême</figcaption>
+      </figure>
+      <figure class="contact__phone">
+        <img src="./img/phone.svg">
+        <figcaption>05 89 54 65 85</figcaption>
+      </figure>
+    </section>
+    <div class="mention">
+      <p>Chap-plat 2019 © - Tous droits réservés - Mentions légales</p>
+    </div>
+    
+  </footer>
+  <script src="/js/index.js"></script>
+</body>
+</html>

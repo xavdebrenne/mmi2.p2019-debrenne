@@ -1,0 +1,101 @@
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1200px)";
+
+footer{
+  section{
+    h2{
+      font-size: 7vw;
+      text-shadow: 1px 1px 1px gray;
+      font-weight: bold;
+      @media #{$tablet} {
+        font-size: 5vh;
+      }
+      
+    }
+  }
+}
+
+.rsn{
+
+  display:flex;
+  justify-content: space-around;
+  text-align: center;
+
+  img{
+    width: 8vh;
+    height: auto;
+  
+    &:hover{
+      animation:elastic 1s ease-out 0s 1 normal;
+    }
+  
+  @media #{$tablet} {
+    width: 40%;
+  }
+  @media #{$desktop} {
+    width: 25%;
+  }
+
+
+  }
+
+  a{
+    text-decoration: none;
+    position: relative;
+    width: 90%;
+    transition: width 0.2s;
+    padding: 15px 0;
+    color: black;
+    
+  
+    &:hover{
+      width:100%;
+      
+
+    }
+
+  }
+}
+@keyframes elastic {
+0%{ -ms-transform: scale(1); transform: scale(1); }
+30%{ -ms-transform: scaleX(1.25) scaleY(0.75); transform: scaleX(1.25) scaleY(0.75); }
+40%{ -ms-transform: scaleX(0.75) scaleY(1.25); transform: scaleX(0.75) scaleY(1.25); }
+60%{ -ms-transform: scaleX(1.15) scaleY(0.85); transform: scaleX(1.15) scaleY(0.85); }
+100%{ -ms-transform: scale(1); transform: scale(1); }
+}
+
+.contact{
+  padding-top: 50px;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(31,31,31,1) 28%, rgba(31,31,31,1) 100%);
+  color: white;
+  @media #{$tablet} {
+    h2{
+      margin-top: 5%;
+    }
+  }
+  
+  figure{
+    
+    padding: 10px 0;
+    
+    
+    img{
+      width: 10%;
+      height: auto;
+      vertical-align: middle;
+    }
+    
+    figcaption{
+      display: inline-block;
+    }
+
+  }
+  
+}
+
+.mention{
+  text-align: center;
+  background-color: rgba(31,31,31,1);
+  color: white;
+  padding: 10px 0
+}

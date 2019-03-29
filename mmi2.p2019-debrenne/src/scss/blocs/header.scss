@@ -23,12 +23,12 @@
 }
 
 .nav{
-    position: fixed;
-    z-index:9;
-    @include pos(-132px, 0);
-    
-    width: 100%;
-  }
+  position: fixed;
+  z-index:9;
+  @include pos(-132px, 0);
+  width: 100%;
+
+}
 
 .nav__button{
   height: 25px;
@@ -78,6 +78,7 @@
 .menu{
   height:50px;
   display: inline;
+
   li{
 
     &:nth-child(even){
@@ -90,5 +91,15 @@
     font-size:1.5rem;
     color: white;
     padding:10px 20px;
+  
+    a{
+      text-decoration: none;
+      color: white;
+    
+      &:hover{
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+      }
+    }
   }
+
 }
